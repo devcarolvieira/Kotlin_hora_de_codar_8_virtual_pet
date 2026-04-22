@@ -68,23 +68,23 @@ class VirtualPet(val nome: String) {
 
     fun estaVivo(): Boolean {
         if (nivelDeFome >= 100) {
-            println("\n💀 Fim de jogo: $nome morreu de fome!")
+            println("\n Fim de jogo: $nome morreu de fome!")
             return false
         }
         if (nivelCansaço >= 100) {
-            println("\n💀 Fim de jogo: $nome morreu de exaustão!")
+            println("\n Fim de jogo: $nome morreu de exaustão!")
             return false
         }
         if (nivelFelicidade <= 0) {
-            println("\n💀 Fim de jogo: $nome fugiu de casa por estar muito triste!")
+            println("\n Fim de jogo: $nome fugiu de casa por estar muito triste!")
             return false
         }
         if (vontadeBanheiro >= 100) {
-            println("\n💩 Oh não! $nome não aguentou e houve um acidente desastroso. Fim de jogo!")
+            println("\n Oh não! $nome não aguentou e houve um acidente desastroso. Fim de jogo!")
             return false
         }
         if (nivelSujeira >= 100) {
-            println("\n🤢 Fim de jogo: $nome ficou doente de tanta sujeira e foi para o veterinário!")
+            println("\n Fim de jogo: $nome ficou doente de tanta sujeira e foi para o veterinário!")
             return false
         }
         return true
